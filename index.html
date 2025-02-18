@@ -9,62 +9,48 @@
     <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="style.css">
 
-    <style>
-        body {
-            font-family: serif;
-            background-image: url(assets/website_frontpage.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-color: #03110a;
-            color: #ffe50c;
-            margin: 0;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-        }
-
-        img {
-            max-width: 200px;
-            margin-bottom: 10px;
-        }
-
-        h1 {
-            font-size: 40px;
-            margin: 0 0 5px;
-        }
-
-        .links {
-            display: flex;
-            gap: 10px; /* Adds space between links */
-        }
-
-        a {
-            color: #ffe50c;
-            text-decoration: none;
-            font-size: 20px;
-        }
-    </style>
+    <script type="text/javascript">
+        let options = {
+            timeZone: 'Pacific/Auckland',
+            hour: 'numeric',
+            minute: 'numeric',
+            second: 'numeric',
+        },
+        formatter = new Intl.DateTimeFormat([], options);
+    
+        setInterval(
+            () => {
+                document.querySelector("#time").innerText = formatter.format(new Date());
+            }
+        , 1000)
+    </script>
 </head>
+
 <body>
+
     <div class="container">
+
         <img src="assets/Painting by Seong Ryul.jpg" alt="image">
         <h1>hellostas</h1>
         <div class="links">
+
             <a href="about.html">About Me</a>
             <a href="https://github.com/helloostas" target="_blank">Github</a>
             <a href="https://www.instagram.com/helloostas/" target="_blank">Instagram</a>
             <a href="https://www.linkedin.com/in/stastigay/" target="_blank">LinkedIn</a>
             <a href="https://helloostas.itch.io/" target="_blank">Itch</a>
+            
         </div>
+
+        <i>
+            <a href="https://www.timeanddate.com/worldclock/new-zealand/auckland">Auckland, New Zealand</a> - <span
+                id="time">0:00 PM</span> <a href="https://www.timeanddate.com/time/zones/nzdt">NZDT</a>
+        </i>
+
     </div>
+
 </body>
+
 </html>

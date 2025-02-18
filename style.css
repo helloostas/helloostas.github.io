@@ -31,7 +31,7 @@ h1 {
 
 .links {
     display: flex;
-    gap: 10px; /* Adds space between links */
+    gap: 10px; 
 }
 
 a {

@@ -65,5 +65,6 @@ body:has(p) {
 
 .about-page p {
     margin: 15px 0;
-    line-height: 0;
+    line-height: 1.6;
+    white-space: pre-line;
 }

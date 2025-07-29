@@ -38,3 +38,32 @@ a {
     text-decoration: none;
     font-size: 20px;
 }
+
+p a {
+    font-size: inherit;
+}
+
+/* About page specific styles */
+body:has(p) {
+    display: block;
+    padding: 20px;
+    height: auto;
+    min-height: 100vh;
+}
+
+/* Alternative approach - add this class to about page body */
+.about-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: auto;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.about-page p {
+    margin: 15px 0;
+    line-height: 0;
+}

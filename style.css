@@ -63,8 +63,3 @@ body:has(p) {
     text-align: center;
 }
 
-.about-page p {
-    margin: 15px 0;
-    line-height: 0.1;
-    white-space: pre-line;
-}
